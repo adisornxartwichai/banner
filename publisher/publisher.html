@@ -37,7 +37,7 @@
   </table>
   <br>
   <div align="center">
-    <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal" align="center">Add Banner event</button>
+    <button type="button" class="btn btn-success btn-lg" data-toggle="confirmation" data-target="#myModal" align="center">Add Banner event</button>
   </div>
 </form>
 </div>
@@ -58,6 +58,7 @@
         <th>End Date</th>
         <th>Update At</th>
         <th>Update By</th>
+        <th>Status</th>
         <th>Manage</th>
       </tr>
     </thead>
@@ -86,7 +87,13 @@
           <div><p>xxxx</p></div>
         </td>
         <td>
-          <div><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Edit Banner</button></div>
+          <div><p>xxxx</p></div>
+        </td>
+        <td>
+          <div>
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#editBanner">Edit Banner</button>
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteBanner">Delete</button>
+          </div>
         </td>
       </tr>
     </tbody>
@@ -94,7 +101,7 @@
   <br>
 </div>
 <!--Modal -->
-<div class="modal fade" id="myModal" role="dialog">
+<div class="modal fade" id="editBanner" role="dialog">
   <div class="modal-dialog modal-md">
     <div class="modal-content">
       <div class="modal-header">
@@ -110,6 +117,7 @@
         End Date : <div ><input class="form-control" type="date"  id="eDate" data-date-format="DD MMMM YYYY"></div><br>
         <div align="center">
           <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal" align="center">Edit Banner event</button>
+
         </div>
       </form>
       </div>

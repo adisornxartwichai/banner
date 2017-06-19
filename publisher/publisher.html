@@ -1,0 +1,122 @@
+<template name="publisher">
+  <div class="container" style="width=100%">
+  <h2>Publisher ad banner management</h2>
+<form>
+  <table class="table table-bordered" style="width=400">
+    <thead>
+      <tr class="warning">
+        <th>Banner photo link</th>
+        <th>Name of Event</th>
+        <th>Path</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="info">
+        <td>
+          <div ><input class="form-control" type="text"  id="linkUrl" placeholder="photo link .."></div>
+        </td>
+        <td>
+          <div><input class="form-control" type="text" id="ename" placeholder="Name of event"></div>
+        </td>
+        <td>
+          <div><input class="form-control" type="text" id="path" placeholder="location to go to when user clicked banner"></div>
+        </td>
+        <td>
+          <div  ><input class="form-control" type="date"  id="sDate" data-date-format="DD MMMM YYYY"></div>
+        </td>
+        <td>
+          <div  ><input class="form-control" type="date"  id="eDate" data-date-format="DD MMMM YYYY"></div>
+        </td>
+
+      </tr>
+
+    </tbody>
+  </table>
+  <br>
+  <div align="center">
+    <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal" align="center">Add Banner event</button>
+  </div>
+</form>
+</div>
+<br><br><br><br>
+</template>
+
+<template name="publisherList">
+  <div class="container" style="width=100%">
+  <h2>Publisher List</h2>
+
+  <table class="table table-bordered" style="width=400">
+    <thead>
+      <tr class="danger">
+        <th>Banner photo link</th>
+        <th>Name of Event</th>
+        <th>Path</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Update At</th>
+        <th>Update By</th>
+        <th>Manage</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="success">
+
+        <td>
+          <div ><p>xxxx</p></div>
+        </td>
+        <td>
+          <div><p>xxxx</p></div>
+        </td>
+        <td>
+          <div><p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p></div>
+        </td>
+        <td>
+          <div><p>xxxx</p></div>
+        </td>
+        <td>
+          <div><p>xxxx</p></div>
+        </td>
+        <td>
+          <div><p>xxxx</p></div>
+        </td>
+        <td>
+          <div><p>xxxx</p></div>
+        </td>
+        <td>
+          <div><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Edit Banner</button></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+</div>
+<!--Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Edit Banner Event</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+        Banner photo link : <div ><input class="form-control" type="text"  id="linkUrl" placeholder="photo link .."></div><br>
+        Name of event : <div ><input class="form-control" type="text"  id="linkUrl" placeholder="Name of event"></div><br>
+        Path : <div ><input class="form-control" type="text"  id="linkUrl" placeholder="location to go to when user clicked banner"></div><br>
+        Start Date : <div ><input class="form-control" type="date"  id="eDate" data-date-format="DD MMMM YYYY"></div><br>
+        End Date : <div ><input class="form-control" type="date"  id="eDate" data-date-format="DD MMMM YYYY"></div><br>
+        <div align="center">
+          <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal" align="center">Edit Banner event</button>
+        </div>
+      </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+</template>
